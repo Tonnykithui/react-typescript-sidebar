@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar {
+    @apply h-full w-60 bg-slate-300 rounded-lg bg-opacity-95 pl-4 pr-4 ;
+}
+
+.sidebar-wrapper {
+    @apply flex flex-col grid-rows-4 h-full;
+}
+
+.profile {
+    @apply row-span-1 h-3/6 flex grid-cols-2;
+}
+
+.dots-img {
+    @apply grid-cols-1 mr-3;
+}
+
+.status-name {
+    @apply grid-cols-1 pt-6 leading-normal p-1;
+}
+
+.menu {
+    @apply bg-red-500 row-span-1 h-full;
+}
+
+.services {
+    @apply bg-black row-span-1 h-full;
+}
+
+.settings {
+    @apply bg-slate-900 row-span-1 h-full;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #db1e1e;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.img-region {
+    @apply h-5 mt-2;
+}
