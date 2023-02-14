@@ -18,10 +18,10 @@ const Profile = () => {
             </div>
             <div className="status-name">
                 <div className="status">
-                    <h3>Live life!</h3>
+                    <p className='font-semibold'>Live life!</p>
+                    <h1 className='font-bold text-xl'>Mark J.</h1>
                 </div>
                 <div className="name">
-                    <h1 className='font-bold text-xl'>Tonny K.</h1>
                 </div>
             </div>
         </div>

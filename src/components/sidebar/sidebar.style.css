@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .sidebar {
-    @apply h-full w-60 bg-slate-300 rounded-lg bg-opacity-95 pl-4 pr-4 ;
+    @apply h-full w-60 bg-slate-400 rounded-lg bg-opacity-95 pl-4 pr-4;
 }
 
 .sidebar-wrapper {
@@ -19,19 +19,31 @@
 }
 
 .status-name {
-    @apply grid-cols-1 pt-6 leading-normal p-1;
+    @apply grid-cols-1 pt-9 leading-normal;
+}
+
+.status {
+    @apply leading-3;
 }
 
 .menu {
-    @apply bg-red-500 row-span-1 h-full;
+    @apply row-span-1 h-full;
+}
+
+.menu ul li {
+    @apply flex flex-row items-center mb-2 pl-4;
+}
+
+.menu ul li P {
+    @apply ml-2;
 }
 
 .services {
-    @apply bg-black row-span-1 h-full;
+    @apply row-span-1 h-full;
 }
 
 .settings {
-    @apply bg-slate-900 row-span-1 h-full;
+    @apply row-span-1 grid grid-rows-3 gap-2 pb-5;
 }
 
 .dot {
@@ -45,4 +57,29 @@
 
 .img-region {
     @apply h-5 mt-2;
+}
+
+.card {
+    @apply bg-white rounded-lg p-6;
+}
+
+
+
+/***************************** SETTINGS*******/
+
+.settings-upper,
+.settings-lower {
+    @apply  rounded-lg p-2 mb-2 w-full h-full pt-5;
+}
+
+.settings-upper {
+    @apply  row-start-1 flex flex-row justify-between mb-5 row-span-1 text-black bg-white;
+}
+
+.settings-lower {
+    @apply row-start-2 row-span-2 flex flex-col justify-center items-center bg-white;
+}
+
+.setting-lower-text {
+    @apply font-bold mt-4 text-xl;
 }

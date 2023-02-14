@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button{
+    @apply rounded-full bg-blue-700 text-white w-10 h-10;
+}
