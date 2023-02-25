@@ -10,11 +10,11 @@ const Menu = () => {
         <div className="menu">
             <p>Menu</p>
             <ul>
-                <li><MdOutlineDashboard /> <p>Dashboard</p></li>
-                <li><IoIosMailUnread /> <p>Mail</p></li>
-                <li><BsFillCalendar2DateFill /><p>Calendar</p></li>
-                <li><IoNotificationsCircleOutline /> <p>Notification</p></li>
-                <li><FcSalesPerformance /> <p>Sales</p></li>
+                <li><span><MdOutlineDashboard /></span> <p>Dashboard</p></li>
+                <li><span><IoIosMailUnread /></span> <p>Mail</p></li>
+                <li><span><BsFillCalendar2DateFill /></span><p>Calendar</p></li>
+                <li><span><IoNotificationsCircleOutline /></span> <p>Notification</p></li>
+                <li><span><FcSalesPerformance /></span> <p>Sales</p></li>
             </ul>
         </div>
     )

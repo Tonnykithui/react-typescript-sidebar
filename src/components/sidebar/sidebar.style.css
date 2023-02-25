@@ -2,48 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/************* SIDEBAR *************/
 .sidebar {
-    @apply h-full w-60 bg-slate-400 rounded-lg bg-opacity-95 pl-4 pr-4;
+    @apply h-full w-60 bg-slate-300 rounded-lg bg-opacity-95 pl-4 pr-4;
 }
 
 .sidebar-wrapper {
-    @apply flex flex-col grid-rows-4 h-full;
+    @apply flex flex-col grid-rows-4;
 }
 
+/************** PROFILE *******************/
 .profile {
-    @apply row-span-1 h-3/6 flex grid-cols-2;
+    @apply row-span-1 grid grid-rows-3 h-3/6;
 }
 
 .dots-img {
-    @apply grid-cols-1 mr-3;
-}
-
-.status-name {
-    @apply grid-cols-1 pt-9 leading-normal;
+    @apply  mr-3 w-full h-3/6;
 }
 
 .status {
+    @apply flex flex-row  row-start-2 row-end-4 leading-normal w-full h-full;
+}
+
+.status-name {
     @apply leading-3;
 }
 
+.img-region {
+    @apply mr-5;
+}
+
+/****************** MENU *******************/
 .menu {
     @apply row-span-1 h-full;
 }
 
+.menu p {
+    @apply text-sm font-semibold;
+}
+
 .menu ul li {
-    @apply flex flex-row items-center mb-2 pl-4;
+    @apply flex flex-row items-center pl-4 pt-1 pb-1; 
+}
+
+.menu ul li span{
+    @apply text-slate-600 ;
+}
+
+.menu ul li span:hover{
+    @apply text-white text-lg;
+}
+
+.menu ul li:hover {
+    @apply bg-blue-500 rounded-lg text-white;
 }
 
 .menu ul li P {
-    @apply ml-2;
+    @apply ml-3;
 }
+
+.menu::after {
+    @apply w-2 bg-blue-700;
+}
+/************ SERVICES **************/
 
 .services {
     @apply row-span-1 h-full;
-}
-
-.settings {
-    @apply row-span-1 grid grid-rows-3 gap-2 pb-5;
 }
 
 .dot {
@@ -55,17 +80,25 @@
     margin-right: 2px;
 }
 
-.img-region {
-    @apply h-5 mt-2;
-}
 
+/****************** CARD ******************/
 .card {
-    @apply bg-white rounded-lg p-6;
+    @apply bg-white rounded-lg pt-4 pb-4 p-1;
 }
 
+.card ul li:hover {
+    @apply text-white;
+}
 
+.card-list-items {
+    @apply pl-3 pr-3;
+}
 
 /***************************** SETTINGS*******/
+
+.settings {
+    @apply row-span-1 grid grid-rows-3 gap-2 pb-5;
+}
 
 .settings-upper,
 .settings-lower {
@@ -73,7 +106,7 @@
 }
 
 .settings-upper {
-    @apply  row-start-1 flex flex-row justify-between mb-5 row-span-1 text-black bg-white;
+    @apply  row-start-1 h-3/4 flex flex-row justify-between mb-5 row-span-1 text-black bg-white;
 }
 
 .settings-lower {
@@ -81,5 +114,12 @@
 }
 
 .setting-lower-text {
-    @apply font-bold mt-4 text-xl;
+    @apply font-bold mt-4 text-lg;
+}
+
+
+
+/********************* TOGGLE BTN ******************/
+.toggle-btn {
+    @apply h-10 w-10 rounded-full bg-slate-300 text-black font-semibold text-xl flex flex-row items-center justify-center;
 }

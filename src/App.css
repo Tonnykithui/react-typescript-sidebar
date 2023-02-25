@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .App {
-  @apply flex items-center justify-center h-screen pt-1 pb-1;
+  @apply flex items-center justify-center h-screen relative;
 }

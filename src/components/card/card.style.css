@@ -1,0 +1,11 @@
+.card-list-items{
+    @apply flex flex-row items-center pt-1 pb-1 font-semibold;
+}
+
+.card-list-items:hover {
+    @apply bg-blue-400 text-white rounded-md;
+}
+
+.card-list-items span {
+    @apply mr-2 text-blue-500 text-xl bg-slate-200 rounded-full p-1;
+}

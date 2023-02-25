@@ -6,7 +6,7 @@ import './sidebar.style.css';
 const Settings = () => {
     return (
         <>
-        <h1>Settings</h1>
+        <p className='font-semibold'>Settings</p>
         <div className="settings">
             <div className="settings-upper">
                 <FiPhoneOutgoing />
@@ -16,7 +16,7 @@ const Settings = () => {
             </div>
             <div className="settings-lower">
                 <MButton />
-                <h1 className='setting-lower-text'>CREATE NEW TASK</h1>
+                <h3 className='setting-lower-text'>CREATE NEW TASK</h3>
             </div>
         </div>
         </>

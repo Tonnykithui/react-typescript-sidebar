@@ -11,17 +11,15 @@ const Profile = () => {
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
+            </div>
+            <div className="status">
                 <div className="img-region">
                     <img src={profile} alt="" style={{ objectFit: 'cover', height: '40px', width: '40px' }}
-                        class="shadow rounded-full max-w-full h-auto align-middle border-none" />
+                        class="shadow rounded-full max-w-full h-auto  border-none" />
                 </div>
-            </div>
-            <div className="status-name">
-                <div className="status">
+                <div className="status-name">
                     <p className='font-semibold'>Live life!</p>
                     <h1 className='font-bold text-xl'>Mark J.</h1>
-                </div>
-                <div className="name">
                 </div>
             </div>
         </div>

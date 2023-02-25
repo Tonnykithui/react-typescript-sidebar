@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './card.style.css';
 
 const Card = ({linkArr}) => {
     return (
@@ -7,7 +8,7 @@ const Card = ({linkArr}) => {
                 {
                     linkArr.map(item => {
                         return(
-                            <li key={item.id}>{item.icon} {item.name}</li>
+                            <li key={item.id} className='card-list-items'><span>{item.icon}</span> {item.name}</li>
                         )
                     }
                     )
